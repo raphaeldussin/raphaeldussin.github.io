@@ -1,8 +1,8 @@
 ---
 title: xESMF
 description: blog post about xESMF
-#date: "2020-10-26T00:00:01+01:00"
-#publishDate: "2020-10-26T00:00:01+01:00"
+date: 2020-10-26
+publishDate: 2020-10-26
 ---
 
 This blog post is a general introduction to xESMF:
