@@ -1,0 +1,108 @@
+baseURL = "https://example.com/"
+languageCode = "en-us"
+title = "Raphael Dussin"
+theme = "personal-web"
+copyright="© Raphael Dussin"
+googleAnalytics = ""
+enableEmoji=true
+enableRobotsTXT=true
+pygmentsUseClasses=true
+pygmentsCodeFences=true
+
+[params.intro]
+  main = "Raphael Dussin"
+  sub = "Numerical Oceanographer"
+
+[params.main]
+  latestPublishHeader = " "
+
+[taxonomies]
+  design = "designs"
+  tech = "techs"
+
+[blackfriday]
+  hrefTargetBlank = true
+
+[params]
+  breadcrumb = true
+  accentColor = "#FD3519"
+  mainSections = ['post'] # values: ['post', 'portfolio'] only accept one section, to be displayed bellow 404
+
+[params.notFound]
+  gopher = "/images/gopher.png" # checkout https://gopherize.me/
+  h1 = 'Bummer!'
+  p = "It seems that this page doesn't exist."
+
+[params.sections]
+  # Define how your sections will be called
+  # when automatically pulled. For instance in the 404 page
+  post = "article"
+  projects = "projects"
+  publications = "publications"
+
+[params.sidebar]
+  backgroundImage = '/images/hpc.jpg'
+  gradientOverlay = 'rgba(0,0,0,0),rgba(0,0,0,0)' # default: rgba(0,0,0,0.4),rgba(0,0,0,0.4)
+  logo = "/images/picnb.jpg"
+[params.assets]
+  favicon = ""
+  customCSS = ""
+
+[params.social]
+  1github = "https://github.com/raphaeldussin"
+  2googlescholar = "https://scholar.google.com/citations?hl=en&user=lDhmzoAAAAAJ"
+  3figshare = "https://figshare.com/authors/Raphael_Dussin/6194333"
+  4medium = "https://raphaeldussin.medium.com/"
+  5researchgate = "https://www.researchgate.net/profile/Raphael-Dussin"
+  6linkedin = "https://www.linkedin.com/in/raphael-dussin-20a039b4"
+
+[params.contact]
+  email = ""
+  text= "" # text of the contact link in the sidebar. If email params.contact.email is defined
+
+
+[menu]
+
+[[menu.main]]
+  identifier = "about"
+  name = "About"
+  title = "About section"
+  url = "/about/"
+  weight = -120
+
+[[menu.main]]
+  identifier = "publications"
+  name = "Publications"
+  title = "Publications"
+  url = "/publications/"
+  weight = -110
+
+#[[menu.main]]
+#  identifier = "projects"
+#  name = "Projects"
+#  title = "Projects"
+#  url = "/projects/"
+#  weight = -110
+
+[[menu.main]]
+  identifier = "blog"
+  name = "Post"
+  title = "Blog section"
+  url = "/post/"
+  weight = -100
+
+[sitemap]
+  changefreq = "monthly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+[privacy]
+  [privacy.googleAnalytics]
+    anonymizeIP = true
+    disable = true
+    respectDoNotTrack = true
+    useSessionStorage = false
+  [privacy.twitter]
+    disable = false
+    enableDNT = true
+    simple = false
